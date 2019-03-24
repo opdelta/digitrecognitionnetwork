@@ -1,0 +1,25 @@
+#Titre	auteur	annee	 categorie(s)
+
+Origine	D. Brown	2017	Thriller	Policier
+Romance et de si belles fiancailles	M. H. Clark	2018	thriller	policier	Romance
+La fille du train	P. Hawkins	2015	Policier
+Le tricycle rouge	V. Hauuy	2018	Drame	Policier
+Double piege	H. Coben	2018	Thriller	Policier
+La mort n'existe pas	D. Eleonori	2018	Science fiction	Thriller
+Le fils cache de la lune	E. Nataf	2018	Science fiction	Humour	Thriller
+Les neuf vies de Stephanie Plum	J. Evanovich	2016	romance	Policier	Humour
+L'inoubliable ete des jeux de seduction	V. Auclair	2016	Humour	Romance
+La petulante ascension de Benjamin Fabre	F. Lehman	2014	HUMOUR
+Rien ne va plus chez les Spellman!	L. Lutz	2018	Humour	Policier
+Une vie inutile	S. Paquet	2012	Humour
+Dix-sept ans de malheur	J. Evanovich	2017	Policier	Romance	Humour
+Fondation	I. Asimov	2015	Science fiction	Drame
+L'eternelle vie de Krios	S. Paquet	2002	Science fiction	Thriller	Humour	Romance
+L'etoile de Pandore	P. F. Hamilton	2018	Thriller	Science fiction
+Martiens, go home!	F. Brown	2000	Science fiction	Humour
+La fin de l'eternite	I. Asimov	2016	SCIENCE FICTION	Romance	Drame
+Humour et science fiction	K. Duguay	2012	Thriller
+L'araignee est une fine mouche	E. Tredez	2016	Policier	humour
+Le lampadaire eternel	M. Nataf	2006	Science FICITON	ROMANCE
+Une minute a la mer	V. C. BROWN	2010	humour	thriller
+Brown sugar	H. Howard	2015	humour
