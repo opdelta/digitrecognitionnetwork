@@ -1,10 +1,17 @@
 #BlueJ class context
 comment0.target=moduleRecherche
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Bibliotheque\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=titre\ auteur\ annee\ categorie
-comment1.target=moduleRecherche(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment0.text=\r\nPetite\ application\ qui\ permet\ d'ex\u00E9cuter\ diverses\ requ\u00EAtes\ pour\ rechercher\ des\r\nlivres\ dans\ une\ biblioth\u00E8que\ (liste\ de\ livres)\ donn\u00E9e.\ Cette\ application\ permettra\ plus\ particuli\u00E8rement\ de\ faire\ des\r\nrecherches\ par\ cat\u00E9gorie(s),\ par\ expression\ dans\ le\ titre,\ par\ auteur,\ et\ par\ p\u00E9riode\ de\ publication.\r\n\r\n\ @author\ Ziad\ Lteif\ (LTEZ18059802)\r\n\ @version\ Mars\ 2019\r\n
+comment1.params=
+comment1.target=java.lang.String\ afficherMenu()
+comment1.text=\r\n\ Methode\ qui\ affiche\ le\ menu\ principal\ et\ qui\ effectue\ une\ boucle\ de\ validation\r\n\ et\ retourne\ le\ choix\ en\ string.\r\n\ \r\n\ @return\ choix\ en\ string\ de\ l'utilisateur.\r\n
 comment2.params=
-comment2.target=java.lang.String\ afficherMenu()
+comment2.target=void\ rechercheCategorie()
 comment3.params=
-comment3.target=void\ main()
-numComments=4
+comment3.target=void\ rechercheTitre()
+comment4.params=
+comment4.target=void\ rechercheAuteur()
+comment5.params=
+comment5.target=void\ recherchePeriode()
+comment6.params=
+comment6.target=void\ main()
+numComments=7
