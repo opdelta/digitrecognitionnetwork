@@ -1,7 +1,0 @@
-#BlueJ class context
-comment0.target=UtilitaireTP2
-comment0.text=\r\n\ INF1120\ H19\ \:\ Module\ utilitaire\ a\ utiliser\ pour\ le\ TP2.\r\n\ Cette\ classe\ contient\ une\ methode\ de\ classe\ pour\ lire\ le\ contenu\ du\ \r\n\ fichier\ FIC_BIBLIO\ qui\ doit\ se\ trouver\ a\ la\ racine\ du\ projet\ (ou\ dans\r\n\ le\ meme\ repertoire\ que\ l'application).\r\n\ \r\n\ @author\ melanie\ lord\r\n\ @version\ mars\ 2019\r\n
-comment1.params=
-comment1.target=java.lang.String\ lireBibliotheque()
-comment1.text=\r\n\ Cette\ methode\ lit\ le\ contenu\ du\ fichier\ FIC_BIBLIO\ et\ le\ retourne\ \r\n\ sous\ la\ forme\ d'une\ chaine\ de\ caracteres.\r\n\ \r\n\ Lors\ de\ la\ lecture,\ les\ lignes\ commencant\ avec\ le\ caractere\ \#\ ou\ les\ \r\n\ lignes\ vides\ (ne\ contenant\ que\ des\ carateres\ blancs)\ sont\ ignorees.\r\n\ \r\n\ @return\ le\ contenu\ de\ FIC_BIBLIO\ sous\ forme\ d'une\ chaine\ de\ caracteres.\r\n
-numComments=2
