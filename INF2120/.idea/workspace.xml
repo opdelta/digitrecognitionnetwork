@@ -17,6 +17,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../repo/INF2120" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunManager">
@@ -44,6 +45,8 @@
       <option name="presentableId" value="Default" />
       <updated>1580239486746</updated>
       <workItem from="1580239490069" duration="884000" />
+      <workItem from="1580243831022" duration="310000" />
+      <workItem from="1580244180186" duration="548000" />
     </task>
     <servers />
   </component>
@@ -51,10 +54,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="709" y="393" width="492" height="326" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1580239550483">
+    <state x="709" y="393" width="492" height="326" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1580244063548">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="709" y="393" width="492" height="326" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1580239550483" />
+    <state x="709" y="393" width="492" height="326" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1580244063548" />
+    <state x="743" y="313" width="424" height="487" key="FileChooserDialogImpl" timestamp="1580244135163">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="743" y="313" width="424" height="487" key="FileChooserDialogImpl/0.30.1920.1050@0.30.1920.1050" timestamp="1580244135163" />
     <state width="1874" height="276" key="GridCell.Tab.0.bottom" timestamp="1580240810681">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
@@ -75,9 +82,9 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="464" y="190" width="992" height="733" key="SettingsEditor/0.30.1920.1050@0.30.1920.1050" timestamp="1580239725526" />
-    <state x="653" y="382" key="com.intellij.ide.util.TipDialog" timestamp="1580239490704">
+    <state x="653" y="382" key="com.intellij.ide.util.TipDialog" timestamp="1580243831219">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="653" y="382" key="com.intellij.ide.util.TipDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1580239490704" />
+    <state x="653" y="382" key="com.intellij.ide.util.TipDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1580243831219" />
   </component>
 </project>

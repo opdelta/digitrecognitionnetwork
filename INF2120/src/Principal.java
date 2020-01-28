@@ -17,5 +17,6 @@ public class Principal {
         System.out.println("allo".compareTo("bonjour"));
         System.out.println("allo".compareTo("allo"));
         System.out.println("allo".compareTo("h"));
+        System.out.println("Test");
     }
 }
