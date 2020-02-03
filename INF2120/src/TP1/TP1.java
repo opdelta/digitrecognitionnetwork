@@ -1,5 +1,7 @@
 package TP1;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -46,15 +48,21 @@ import java.util.Scanner;
  */
 
 public class TP1 {
+    public static final String CHAINE1 = "Chaine 1 : ";
+    public static final String CHAINE2 = "Chaine 2 : ";
+    public static final String DEVIATION = "Deviation maximale : ";
+    public static final String SIMILAR = "Similarite";
+
     public static void main(String [] args) {
-        Scanner sc = new Scanner(System.in);
+        //Scanner sc = new Scanner(System.in);
 
-        String s1 = sc.next();
-        String s2 = sc.next();
-        int m = sc.nextInt();
+        }
+        //String s1 = sc.next();
+        //String s2 = sc.next();
+        //int m = sc.nextInt();
 
-        sc.close();
-
-    }
+        //sc.close();
 
 }
+
+

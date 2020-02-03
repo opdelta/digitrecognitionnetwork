@@ -2,21 +2,21 @@
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Vector;
+import java.util.function.Function;
 
-/**
- * int this.compareTo(v)
- * if int < 0 = this < v.
- * if int = 0 = this = v.
- * if int > 0 = this > v.
- *
- */
 public class Principal {
 
+    private static Object Quatre;
+
     public static void main(String[] args) {
-        System.out.println("allo".compareTo("bonjour"));
-        System.out.println("allo".compareTo("allo"));
-        System.out.println("allo".compareTo("h"));
-        System.out.println("Test");
+        ArrayList<Integer> a = new ArrayList<>();
+        a.add( 3 );
+        a.add( 5 );
+        a.add( 7 );
+
+        a.forEach(new Affiche());
     }
 }

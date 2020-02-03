@@ -1,0 +1,114 @@
+
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * int this.compareTo(v)
+ * if int < 0 = this < v.
+ * if int = 0 = this = v.
+ * if int > 0 = this > v.
+ *
+ */
+public class Principal {
+
+    public static void main(String[] args) {
+        System.out.println("allo".compareTo("bonjour"));
+        System.out.println("allo".compareTo("allo"));
+        System.out.println("allo".compareTo("h"));
+        System.out.println("Test");
+
+    }
+}
+/*
+ * Iterable (Iterator)
+ *
+ * for (int i = 0; i < tab.length; ++ i) {
+ *     int x = tab[i];
+ *     ...x...
+ * }
+ *
+ * for (int i = 0; i <arlist.size(); ++ i) {
+ *      int x = arlist.get(i);
+ *      ...x...
+ * }
+ *
+ * initialiser au debut.
+ * while(j'ai un suivant) [
+ *      acceder l'element.
+ *      passer au suivant.
+ * }
+ *
+ * Soit une structure (e.g. tableau) s de type S.
+ * Elle contient des elements de type E.
+ *
+ * variable indiquant le debut de type I.
+ * T i = initialiser avec le debut de la structure.
+ * while(i n'est pas a la fin) {
+ *      acceder a l'element indique par i.
+ *      deplacer i au suivant.
+ * }
+ *
+ * PLus precisement:
+ *S : implements Iterable
+ * I i = s.iterator();
+ * while(i.hasNext()) {
+ *      // next: retourne le courant et passe au suivant.
+ *      E x = i.next();
+ *
+ * }
+ *
+ * Iterator = construit une nouvelle boucle sur les elements de la liste.
+ */
+
+ -------------------------------------------------
+ /**
+  * Exemple d'Iterator qui parcoure une boucle et retourne les element d'un ArrayList
+  *
+  */
+ /*public class Principal {
+  *
+  *  public static void main(String[] args) {
+  *      ArrayList<Integer > a = new ArrayList<>();
+  *      a.add(3);
+  *      a.add(45);
+  *
+  *
+  *      Iterator<Integer> it = a.iterator();
+  *      while(it.hasNext()) {
+  *          Integer x = it.next();
+  *
+  *          System.out.println(x);
+  *     }
+  *     for (Integer x : a) {
+  *          System.out.println(x);
+  *  }
+  * }
+  --------------------------------------------------
+          /**
+           * 1945 -> semantique a l'aide de fonctions
+           * Langage fonctionnel: sml, lml, haskell..
+           * -> integrer les fonctions dans des langages imperatifs (Ruby, Javascript, Python).
+           * Java 8: introduction de fonctions.
+           * 1) interfaces
+           * 2) lambda
+           *
+           * Fonction :
+           *      f(x) = x + 3
+           *      g(x) = x ^ 2 + 4
+           *      f : N -> N
+           *      f( 2 ) = 5
+           *
+           * Type de donnees pour representer les fonctions.
+           *
+           * f : T -> R
+           * abstract R appliquer(T x )
+           **/
+          Function<Double, Double> f =
+                  new XDeux();
+          Function<Double, Double> g =
+                  new XCube();
+
+          Function<Double,Double> h = f.compose(g);
+          System.out.println();
