@@ -53,16 +53,16 @@ public class TP1 {
     public static final String DEVIATION = "Deviation maximale : ";
     public static final String SIMILAR = "Similarite";
 
-    public static void main(String [] args) {
-        //Scanner sc = new Scanner(System.in);
-
-        }
-        //String s1 = sc.next();
-        //String s2 = sc.next();
-        //int m = sc.nextInt();
-
-        //sc.close();
-
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("\n" + CHAINE1);
+        String s1 = sc.next();
+        System.out.print("\n" + CHAINE2);
+        String s2 = sc.next();
+        System.out.print("\n" + DEVIATION);
+        int m = sc.nextInt();
+        sc.close();
+    }
 }
 
 
