@@ -32,7 +32,7 @@ public enum Acides {
     private final List<String> codons;
 
     /**
-     * Constructeur qui construit une liste
+     * Constructeur qui construit une liste contenant les acides aminees des codons.
      *
      * @param codons
      */
@@ -54,8 +54,5 @@ public enum Acides {
         return acideTrouve;
     }
 
+
 }
-
-
-
-

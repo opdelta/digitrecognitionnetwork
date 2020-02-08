@@ -52,17 +52,60 @@ public class TP1 {
     public static final String CHAINE2 = "Chaine 2 : ";
     public static final String DEVIATION = "Deviation maximale : ";
     public static final String SIMILAR = "Similarite";
+    public static final String ERR_TROIS = "Erreur: Votre chaine doit contenir un nombre de lettres divisible par trois. Veuillez recommencer.";
+    public static final String ERR_LETTRES = "Erreur: Votre chaine doit contenir UNIQUEMENT les lettres A,C,G,U en majuscule. Veuillez recommencer.";
+    public static final String ERR_DEVIATION = "Erreur: Votre deviation doit etre superieure a 0. Veuillez recommencer.";
+
+    public static void verifierChaine (String chaine) throws LettresInvalides, NombreDeLettresInvalide {
+        boolean valide = true;
+        try {
+            for (int i = 0; i < chaine.length(); ++i) {
+                if (chaine.charAt(i) != 'A' && chaine.charAt(i) != 'C' && chaine.charAt(i) != 'G' && chaine.charAt(i) != 'U') {
+                    valide = false;
+                }
+            }
+            if (!valide) {
+                throw new LettresInvalides(ERR_LETTRES);
+            }
+            if (chaine.length() % 3 != 0) {
+                throw new NombreDeLettresInvalide(ERR_TROIS);
+            }
+        } catch (LettresInvalides e) {
+            System.out.println(ERR_LETTRES);
+            System.exit(-1);
+        } catch (NombreDeLettresInvalide e) {
+            System.out.println(ERR_TROIS);
+            System.exit(-2);
+        }
+    }
+
+
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("\n" + CHAINE1);
-        String s1 = sc.next();
-        System.out.print("\n" + CHAINE2);
-        String s2 = sc.next();
-        System.out.print("\n" + DEVIATION);
-        int m = sc.nextInt();
-        sc.close();
+        try {
+            Scanner sc = new Scanner(System.in);
+            System.out.print("\n" + CHAINE1);
+            String s1 = sc.next();
+            verifierChaine(s1);
+            System.out.print("\n" + CHAINE2);
+            String s2 = sc.next();
+            verifierChaine(s2);
+            System.out.print("\n" + DEVIATION);
+            int m = sc.nextInt();
+            if (m <= 0) {
+                throw new NumberFormatException();
+            }
+            sc.close();
+        } catch (LettresInvalides e) {
+            System.exit(-1);
+        } catch (NombreDeLettresInvalide e) {
+            System.exit(-2);
+        }catch (NumberFormatException e) {
+            System.out.println(ERR_DEVIATION);
+                System.exit(-3);
+        }
     }
 }
+
 
 

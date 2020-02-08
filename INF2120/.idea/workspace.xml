@@ -26,8 +26,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580951333900" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../repo/INF2120" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager" selected="Application.TP1">
     <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -98,22 +99,22 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="743" y="313" width="424" height="487" key="FileChooserDialogImpl/0.30.1920.1050@0.30.1920.1050" timestamp="1580244135163" />
-    <state width="1874" height="276" key="GridCell.Tab.0.bottom" timestamp="1580771202155">
+    <state width="1874" height="276" key="GridCell.Tab.0.bottom" timestamp="1581132592128">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1580771202155" />
-    <state width="1874" height="276" key="GridCell.Tab.0.center" timestamp="1580771202155">
+    <state width="1874" height="276" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1581132592128" />
+    <state width="1874" height="276" key="GridCell.Tab.0.center" timestamp="1581132592128">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1580771202155" />
-    <state width="1874" height="276" key="GridCell.Tab.0.left" timestamp="1580771202155">
+    <state width="1874" height="276" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1581132592128" />
+    <state width="1874" height="276" key="GridCell.Tab.0.left" timestamp="1581132592128">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1580771202155" />
-    <state width="1874" height="276" key="GridCell.Tab.0.right" timestamp="1580771202155">
+    <state width="1874" height="276" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1581132592128" />
+    <state width="1874" height="276" key="GridCell.Tab.0.right" timestamp="1581132592128">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1580771202155" />
+    <state width="1874" height="276" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1581132592128" />
     <state x="464" y="190" width="992" height="733" key="SettingsEditor" timestamp="1580239725526">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
@@ -122,5 +123,20 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="653" y="382" key="com.intellij.ide.util.TipDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1580754651654" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
