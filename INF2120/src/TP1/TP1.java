@@ -1,7 +1,7 @@
 package TP1;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -53,9 +53,15 @@ public class TP1 {
     public static final String DEVIATION = "Deviation maximale : ";
     public static final String SIMILAR = "Similarite";
     public static final String ERR_TROIS = "Erreur: Votre chaine doit contenir un nombre de lettres divisible par trois. Veuillez recommencer.";
-    public static final String ERR_LETTRES = "Erreur: Votre chaine doit contenir UNIQUEMENT les lettres A,C,G,U en majuscule. Veuillez recommencer.";
-    public static final String ERR_DEVIATION = "Erreur: Votre deviation doit etre superieure a 0. Veuillez recommencer.";
+    public static final String ERR_LETTRES = "Erreur: Votre chaine doit contenir que les lettres \"A,C,G,U\" en majuscule. Veuillez recommencer.";
+    public static final String ERR_DEVIATION = "Erreur: Votre deviation doit etre un chiffre superieur a 0. Veuillez recommencer.";
 
+    /**
+     *
+     * @param chaine
+     * @throws LettresInvalides
+     * @throws NombreDeLettresInvalide
+     */
     public static void verifierChaine (String chaine) throws LettresInvalides, NombreDeLettresInvalide {
         boolean valide = true;
         try {
@@ -71,39 +77,57 @@ public class TP1 {
                 throw new NombreDeLettresInvalide(ERR_TROIS);
             }
         } catch (LettresInvalides e) {
-            System.out.println(ERR_LETTRES);
+            System.err.println(ERR_LETTRES);
             System.exit(-1);
         } catch (NombreDeLettresInvalide e) {
-            System.out.println(ERR_TROIS);
+            System.err.println(ERR_TROIS);
             System.exit(-2);
         }
     }
 
 
-
     public static void main(String[] args) {
+        String s1;  //Information to explain
+        ArrayList<Acides> s = new ArrayList<>(); //Information to explain
+        ArrayList<Acides> t = new ArrayList<>(); //Information to explain
+        String s2;  //Information to explain
+        int m;  //Information to explain
+
         try {
             Scanner sc = new Scanner(System.in);
             System.out.print("\n" + CHAINE1);
-            String s1 = sc.next();
+            s1 = sc.next();
             verifierChaine(s1);
+            s = Acides.sequenceToArray(s1);
+            System.out.println(s.toString());
+
+
+
             System.out.print("\n" + CHAINE2);
-            String s2 = sc.next();
+            s2 = sc.next();
             verifierChaine(s2);
+            t = Acides.sequenceToArray(s2);
+            System.out.println(t.toString());
             System.out.print("\n" + DEVIATION);
-            int m = sc.nextInt();
+            m = sc.nextInt();
+            System.out.println(Deviation.fouille(s,t,m));
             if (m <= 0) {
                 throw new NumberFormatException();
             }
             sc.close();
+
         } catch (LettresInvalides e) {
             System.exit(-1);
         } catch (NombreDeLettresInvalide e) {
             System.exit(-2);
         }catch (NumberFormatException e) {
-            System.out.println(ERR_DEVIATION);
+            System.err.println(ERR_DEVIATION);
                 System.exit(-3);
+        }catch (InputMismatchException e) {
+            System.err.println(ERR_DEVIATION);
+            System.exit(-4);
         }
+
     }
 }
 
