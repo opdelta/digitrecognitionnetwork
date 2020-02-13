@@ -55,12 +55,13 @@ public class TP1 {
     public static final String ERR_TROIS = "Erreur: Votre chaine doit contenir un nombre de lettres divisible par trois. Veuillez recommencer.";
     public static final String ERR_LETTRES = "Erreur: Votre chaine doit contenir que les lettres \"A,C,G,U\" en majuscule. Veuillez recommencer.";
     public static final String ERR_DEVIATION = "Erreur: Votre deviation doit etre un chiffre superieur a 0. Veuillez recommencer.";
-
+    public static final String ERR_AUTRE = "Erreur: Un probleme imprevu est survenu. Veuillez recommencer.";
     /**
+     * Methode qui verifie si une chaine entree est valide ou non.
      *
-     * @param chaine
-     * @throws LettresInvalides
-     * @throws NombreDeLettresInvalide
+     * @param chaine Une chaine quelconque.
+     * @throws LettresInvalides Si la chaine n'a pas les lettres ACGU en majuscule uniquement, l'exception est lancee.
+     * @throws NombreDeLettresInvalide Si la chaine n'a pas un nombre de lettres divisible par trois, l'exception est lancee.
      */
     public static void verifierChaine (String chaine) throws LettresInvalides, NombreDeLettresInvalide {
         boolean valide = true;
@@ -92,6 +93,8 @@ public class TP1 {
         ArrayList<Acides> t = new ArrayList<>(); //Information to explain
         String s2;  //Information to explain
         int m;  //Information to explain
+        double deviationPonderee;
+        double deviation;
 
         try {
             Scanner sc = new Scanner(System.in);
@@ -99,23 +102,23 @@ public class TP1 {
             s1 = sc.next();
             verifierChaine(s1);
             s = Acides.sequenceToArray(s1);
-            System.out.println(s.toString());
-
-
 
             System.out.print("\n" + CHAINE2);
             s2 = sc.next();
             verifierChaine(s2);
             t = Acides.sequenceToArray(s2);
-            System.out.println(t.toString());
+
             System.out.print("\n" + DEVIATION);
             m = sc.nextInt();
-            System.out.println(Deviation.fouille(s,t,m));
             if (m <= 0) {
                 throw new NumberFormatException();
             }
             sc.close();
 
+            System.out.println(deviation = Deviation.f(s,t,m));
+            deviationPonderee = Deviation.ponderer(deviation, s.size(), t.size(), m);
+
+            System.out.println(Deviation.similarite(deviationPonderee));
         } catch (LettresInvalides e) {
             System.exit(-1);
         } catch (NombreDeLettresInvalide e) {
@@ -126,6 +129,9 @@ public class TP1 {
         }catch (InputMismatchException e) {
             System.err.println(ERR_DEVIATION);
             System.exit(-4);
+        } catch (Exception e) {
+            System.err.println(ERR_AUTRE);
+            System.exit(-5);
         }
 
     }
