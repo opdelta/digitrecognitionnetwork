@@ -1,60 +1,27 @@
+/**
+ * Programme qui permet de comparer deux acides ribonucléiques (ARN) en retournant la similarite entre les deux ARNs
+ * fournis en parametre.
+ *
+ * @author Ziad Lteif
+ * @version Fevrier 2020
+ * @CodePermanent LTEZ18059802
+ */
+
 package TP1;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-/**
- * -> Classes.
- * -> ArrayList
- * -> methode:
- *      commentee:
- *      description de la methode.
- *      decription des arguments (role).
- *      description des sorties.
- *      description des exceptions.
- *      -> for, while, if, switch, try <= 7.
- *      -> return <= 1
- *      -> continue == 0
- *      break :: dans un switch seulement.
- *
- *
- * Lire 3 entrees
- * 1 - Chaine de caracteres ARN (a1) Nucleotide : ACGU
- * 2 - Chaine de caracteres ARN (a2) Nucleotide : ACGU
- * 3 - nombre entier (m) > 0
- *
- * transformer en sequence acide amine les nucleotides.
- * 3 nucleotides (codons) -> acide amine. (Divisible par 3).
- * a1 -> s1 (ArrayList)
- * a2 -> s2 (ArrayList)
- *
- * Calcul des differences.
- *
- * Pour tout acide acide amine (i) dans s1
- *  Trouver le distance du meme acide amine la plus proche dans s2.
- *  Faire la somme des distances.
- * Pour tout acide amine (j) dans s2
- *  Trouver la distance du meme acide amine la plus proche dans s1.
- *  Faire la somme des distances.
- *
- * Exemple: s1 - V A B K A R && s2 - V K A B B S
- * Distance de A = 1. (A dans s1 = ind. 1 && A dans s2 = ind. 2)
- * Distance de V = 0.
- * Distance de B = 1.
- * Distance de K = 2.
- * Distance de R = inf. -> m ex. 3.
- * Distance total = 0 + 1 + 1 + 2 + 2 + 3  = 9.
- */
 
 public class TP1 {
     public static final String CHAINE1 = "Chaine 1 : ";
     public static final String CHAINE2 = "Chaine 2 : ";
     public static final String DEVIATION = "Deviation maximale : ";
     public static final String SIMILAR = "Similarite : ";
-    public static final String ERR_TROIS = "Erreur: Votre chaine doit contenir un nombre de lettres divisible par trois. Veuillez recommencer.";
-    public static final String ERR_LETTRES = "Erreur: Votre chaine doit contenir que les lettres \"A,C,G,U\" en majuscule. Veuillez recommencer.";
-    public static final String ERR_DEVIATION = "Erreur: Votre deviation doit etre un chiffre superieur a 0. Veuillez recommencer.";
+    public static final String ERR_TROIS = "Erreur: La chaine doit contenir un nombre de lettres divisible par trois. Veuillez recommencer.";
+    public static final String ERR_LETTRES = "Erreur: La chaine doit contenir que les lettres \"A,C,G,U\" en majuscule. Veuillez recommencer.";
+    public static final String ERR_DEVIATION = "Erreur: La deviation doit etre un chiffre superieur a 0. Veuillez recommencer.";
     public static final String ERR_AUTRE = "Erreur: Un probleme imprevu est survenu. Veuillez recommencer.";
     /**
      * Methode qui verifie si une chaine entree est valide ou non.
@@ -114,9 +81,7 @@ public class TP1 {
                 throw new NumberFormatException();
             }
             sc.close();
-
-            deviation = Deviation.fouilleTableauInverse(s,t,m);
-            System.out.println("Deviation = " + Deviation.test(s,t,m));
+            deviation = Deviation.getDeviation(s,t,m);
             deviationPonderee = Deviation.ponderer(deviation, s.size(), t.size(), m);
 
             System.out.println(SIMILAR + Deviation.similarite(deviationPonderee));
