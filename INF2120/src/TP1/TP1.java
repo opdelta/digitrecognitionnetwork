@@ -51,7 +51,7 @@ public class TP1 {
     public static final String CHAINE1 = "Chaine 1 : ";
     public static final String CHAINE2 = "Chaine 2 : ";
     public static final String DEVIATION = "Deviation maximale : ";
-    public static final String SIMILAR = "Similarite";
+    public static final String SIMILAR = "Similarite : ";
     public static final String ERR_TROIS = "Erreur: Votre chaine doit contenir un nombre de lettres divisible par trois. Veuillez recommencer.";
     public static final String ERR_LETTRES = "Erreur: Votre chaine doit contenir que les lettres \"A,C,G,U\" en majuscule. Veuillez recommencer.";
     public static final String ERR_DEVIATION = "Erreur: Votre deviation doit etre un chiffre superieur a 0. Veuillez recommencer.";
@@ -115,10 +115,12 @@ public class TP1 {
             }
             sc.close();
 
-            System.out.println(deviation = Deviation.f(s,t,m));
+            deviation = Deviation.fouilleTableauInverse(s,t,m);
+            System.out.println("Deviation = " + Deviation.test(s,t,m));
             deviationPonderee = Deviation.ponderer(deviation, s.size(), t.size(), m);
 
-            System.out.println(Deviation.similarite(deviationPonderee));
+            System.out.println(SIMILAR + Deviation.similarite(deviationPonderee));
+
         } catch (LettresInvalides e) {
             System.exit(-1);
         } catch (NombreDeLettresInvalide e) {

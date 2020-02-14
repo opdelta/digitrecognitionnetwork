@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1643d79-1ca8-4dad-9d3b-ab93f82be5fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INF2120/META-INF/INF2120.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/INF2120/TP1/Deviation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/INF2120/TP1/Deviation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/INF2120/TP1/TP1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/INF2120/TP1/TP1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TP1/Deviation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TP1/Deviation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TP1/TP1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TP1/TP1.java" afterDir="false" />
     </list>
@@ -93,12 +92,24 @@
       <workItem from="1580754650492" duration="15175000" />
       <workItem from="1581173243051" duration="1904000" />
       <workItem from="1581358516800" duration="40629000" />
-      <workItem from="1581610721066" duration="20490000" />
+      <workItem from="1581610721066" duration="26647000" />
     </task>
+    <task id="LOCAL-00001" summary="Worked TP1">
+      <created>1581634216726</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581634216726</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Worked TP1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Worked TP1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="216" width="800" height="680" key="#Project_Structure" timestamp="1581360537960">
@@ -122,33 +133,33 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="693" y="304" width="524" height="504" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1580763115806" />
-    <state x="579" y="114" key="CommitChangelistDialog2" timestamp="1581634199406">
+    <state x="579" y="114" key="CommitChangelistDialog2" timestamp="1581634216179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="579" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1581634199406" />
+    <state x="579" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1581634216179" />
     <state x="743" y="313" width="424" height="487" key="FileChooserDialogImpl" timestamp="1580244135163">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="743" y="313" width="424" height="487" key="FileChooserDialogImpl/0.30.1920.1050@0.30.1920.1050" timestamp="1580244135163" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1581634199422">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1581645826933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1581634199422" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1581645826933" />
     <state width="1874" height="341" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1581609956057" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1581634199422">
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1581645826932">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1581634199422" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1581645826932" />
     <state width="1874" height="341" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1581609956057" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1581634199422">
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1581645826932">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1581634199422" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1581645826932" />
     <state width="1874" height="341" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1581609956056" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1581634199422">
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1581645826933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1581634199422" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1581645826933" />
     <state width="1874" height="341" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1581609956057" />
     <state width="1874" height="341" key="GridCell.Tab.1.bottom" timestamp="1581609956058">
       <screen x="0" y="30" width="1920" height="1050" />

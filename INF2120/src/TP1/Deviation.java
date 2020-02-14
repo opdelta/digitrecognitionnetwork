@@ -11,15 +11,30 @@ import java.util.List;
 public class Deviation {
 
 
-    public static int f(ArrayList<Acides> t1, ArrayList<Acides> t2, int dev){
+    public static int test(ArrayList<Acides> t1, ArrayList<Acides>t2, int dev) {
         int deviation = 0;
-        for ( int i = 0; i < t1.size(); ++i) {
-            if(t2.contains(t1.get(i))) {
+        Acides acide1;
+        int acide2;
+        int indiceAcide2;
+        int indiceAcide1;
+        int longt1 = Math.max(t1.size(), t2.size());
+
+        for (int i = 0; i < t1.size(); ++i) {
+            acide1 = t1.get(i);
+            indiceAcide1 = i;
+            if (t2.contains(acide1)) {
                 for (int j = 0; j < t2.size(); ++j) {
-                    if (Math.abs(i-j) <= dev) {
-                        deviation = deviation + Math.min(Math.min(Math.abs(i-j), t2.indexOf(t1.get(i))), Math.min(Math.abs(i-j), t1.indexOf(t2.get(j))));
-                    } else {
-                        deviation = deviation + Math.min(Math.min(Math.abs(i-j), dev), Math.min(Math.abs(i-j), dev));
+                    indiceAcide2 = j;
+                    if (t2.get(j) == acide1) {
+                        acide2 = j;
+                        if (acide2 - indiceAcide1 <= indiceAcide2) {
+                            if (Math.abs(indiceAcide2 - indiceAcide1) > dev) {
+                                deviation = deviation + dev;
+                            } else {
+                                deviation = deviation + Math.abs(indiceAcide2 - indiceAcide1);
+                            }
+                        }
+
                     }
                 }
             } else {
@@ -29,11 +44,6 @@ public class Deviation {
 
         return deviation;
     }
-
-
-
-
-
 
 
 
@@ -62,42 +72,11 @@ public class Deviation {
 
     /**
      * Methode qui fouille deux tableaux d'acides amines et calcule la similarite entre les deux.
-     * @param t1
-     * @param t2
-     * @param dev
+     * @param premierTableau
+     * @param deuxiemeTableau
+     * @param deviationMaximale
      * @return
      */
-    public static int fouille(ArrayList<Acides> t1, ArrayList<Acides> t2, int dev) {
-        int deviation = 0;
-        int deviationT = 0;
-        Acides acide;
-        ArrayList intJ = new ArrayList<Integer>();
-        ArrayList correspondances = new ArrayList<String>();
-        ArrayList deviationInt = new ArrayList<Integer>();
-
-        for (int i = 0; i < t1.size(); ++i) {
-            if (t2.contains(t1.get(i))) {
-                for (int j=0;j<t2.size();++j){
-                    if (t1.get(i) == t2.get(j)) {
-                        acide = t1.get(i);
-                        correspondances.add("t1["+i+"], t2["+j+"]");
-                        deviationInt.add(Math.abs(j-i));
-                        intJ.add(j);
-
-                    }
-                }
-            } else {
-                deviation = deviation + dev;
-            }
-
-        }
-        for( int k = 0; k<correspondances.size(); ++k) {
-            System.out.println(correspondances.get(k) + " = " + deviationInt.get(k) + " indices = " + intJ.get(k));
-        }
-
-        return deviation;
-    }
-
     public static int fouilleTableau(ArrayList<Acides> premierTableau, ArrayList<Acides> deuxiemeTableau, int deviationMaximale) {
         int deviationTrouvee = 0;
         int deviationTotale = 0;
