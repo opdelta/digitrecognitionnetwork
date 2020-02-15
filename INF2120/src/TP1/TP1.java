@@ -55,11 +55,11 @@ public class TP1 {
 
 
     public static void main(String[] args) {
-        String s1;  //Information to explain
-        ArrayList<Acides> s = new ArrayList<>(); //Information to explain
-        ArrayList<Acides> t = new ArrayList<>(); //Information to explain
-        String s2;  //Information to explain
-        int m;  //Information to explain
+        String s1;  //Premiere chaine de codons
+        ArrayList<Acides> s = new ArrayList<>(); //Premier tableau de codons
+        ArrayList<Acides> t = new ArrayList<>(); //Deuxieme tableau de codons
+        String s2;  //Deuxieme chaine de codons
+        int m;  //deviation maximale
         double deviationPonderee;
         double deviation;
 

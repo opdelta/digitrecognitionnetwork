@@ -88,6 +88,8 @@
       <workItem from="1581358516800" duration="40629000" />
       <workItem from="1581610721066" duration="26647000" />
       <workItem from="1581690282220" duration="18545000" />
+      <workItem from="1581721821046" duration="729000" />
+      <workItem from="1581725238963" duration="789000" />
     </task>
     <task id="LOCAL-00001" summary="Worked TP1">
       <created>1581634216726</created>
@@ -176,10 +178,10 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="464" y="190" width="992" height="733" key="SettingsEditor/0.30.1920.1050@0.30.1920.1050" timestamp="1581690325007" />
-    <state x="653" y="382" key="com.intellij.ide.util.TipDialog" timestamp="1581690282508">
+    <state x="653" y="382" key="com.intellij.ide.util.TipDialog" timestamp="1581725239644">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="653" y="382" key="com.intellij.ide.util.TipDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1581690282508" />
+    <state x="653" y="382" key="com.intellij.ide.util.TipDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1581725239644" />
     <state x="669" y="451" width="572" height="211" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1581555109849">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>

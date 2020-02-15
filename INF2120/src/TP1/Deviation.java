@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-//GCCAAUUCCACGUCGUAU    -   test 1
-//AAUUCGGCGACAGCCUGGUCCUAC  -   test 2
+
 public class Deviation {
     /**
      *
