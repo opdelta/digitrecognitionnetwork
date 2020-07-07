@@ -1,3 +1,7 @@
+/**
+ *
+ * opdelta
+ */
 package NeuralNetwork;
 
 import trainset.TrainSet;
