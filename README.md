@@ -2,6 +2,14 @@
 
 ## Introduction
 
-DRN is a side-project that aimed to create a neural network that can learn and recognize different digits inputted. 
+DRN is a side-project that aimed to create a neural network that can learn and recognize different digits based on the input.
 
-[TO-DO]
+## Author
+
+- Finn Eggers
+- Luecx
+- opdelta
+
+## Installation
+
+[TODO]
